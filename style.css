@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#filterInput {
+    padding: 10px;
+    width: 200px;
+    margin: 20px 0;
+}
+
+#result {
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-width: 300px;
+}
