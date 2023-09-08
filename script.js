@@ -89,3 +89,5 @@ function showTicket() {
     var ticketOutput = getTicketByName(name);
     document.getElementById("result").innerText = ticketOutput;
 }
+
+document.getElementById("findTicketButton").addEventListener("click", showTicket);
