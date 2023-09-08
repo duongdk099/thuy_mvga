@@ -73,19 +73,19 @@ let data = [
   { ticket: "INC0082", name: "Natalie Nguyen" },
 ];
 
-// Function to get the name based on the ticket
-function getNameByTicket(ticketCode) {
-  for (let item of data) {
-    if (item.ticket === ticketCode) {
-      return item.name;
+// Function to get the ticket based on the name
+function getTicketByName(nameInput) {
+    for (let item of data) {
+        if (item.name === nameInput) {
+            return item.ticket;
+        }
     }
-  }
-  return "Ticket not found";
+    return 'Name not found';
 }
 
 // Function to handle button click
-function showName() {
-  var ticketInput = document.getElementById("ticketInput").value;
-  var nameOutput = getNameByTicket(ticketInput);
-  document.getElementById("result").innerText = nameOutput;
+function showTicket() {
+    var name = document.getElementById("nameInput").value;
+    var ticketOutput = getTicketByName(name);
+    document.getElementById("result").innerText = ticketOutput;
 }
